@@ -1,0 +1,136 @@
+h1 {
+    position: relative;
+    color: #cf1342;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main {
+    display: block;
+    margin: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 90px 1px #989;
+    background-color: transparent;
+    position: relative;
+    width: 900px;
+}
+
+.saffron {
+    background: #FF671F;
+    height: 200px;
+}
+
+.white {
+    background: #FFFFFF;
+    height: 200px;
+}
+
+.green {
+    background: #046A38;
+    height: 200px;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #dfe1e5;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+.wheel {
+    height: 190px;
+    width: 190px;
+    border: 2px solid #06038D;
+    border-radius: 100px;
+    position: relative;
+    margin: 5px auto;
+}
+
+.wheel .line {
+    height: 100%;
+    width: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    background: #06038D;
+}
+
+.line:nth-child(1) {
+    transform: rotate(15deg);
+}
+
+.line:nth-child(2) {
+    transform: rotate(30deg);
+}
+
+.line:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.line:nth-child(4) {
+    transform: rotate(60deg);
+}
+
+.line:nth-child(5) {
+    transform: rotate(75deg);
+}
+
+.line:nth-child(6) {
+    transform: rotate(90deg);
+}
+
+.line:nth-child(7) {
+    transform: rotate(105deg);
+}
+
+.line:nth-child(8) {
+    transform: rotate(120deg);
+}
+
+.line:nth-child(9) {
+    transform: rotate(135deg);
+}
+
+.line:nth-child(10) {
+    transform: rotate(150deg);
+}
+
+.line:nth-child(11) {
+    transform: rotate(165deg);
+}
+
+.line:nth-child(12) {
+    transform: rotate(180deg);
+}
+
+.wheel {
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
